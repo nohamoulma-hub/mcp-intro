@@ -1,0 +1,65 @@
+[
+  {
+    "id": "python-decorators",
+    "title": "Python Decorators",
+    "summary": "Decorators are functions that wrap another function to extend or modify its behavior without changing its source code.",
+    "prerequisites": ["Functions", "Scope"],
+    "key_concepts": ["Higher-order functions", "Wrapper functions", "@syntax sugar", "functools.wraps"],
+    "common_mistakes": ["Forgetting to return the wrapper function", "Losing the original function's metadata (name, docstring)"],
+    "practice_idea": "Create a decorator that logs function calls, including their arguments and execution time."
+  },
+  {
+    "id": "python-generators",
+    "title": "Python Generators",
+    "summary": "Generators let you produce a sequence of values lazily, one at a time, instead of building a full list in memory.",
+    "prerequisites": ["Functions", "Iterators"],
+    "key_concepts": ["yield keyword", "Lazy evaluation", "Generator expressions", "StopIteration"],
+    "common_mistakes": ["Trying to reuse an exhausted generator", "Confusing return with yield inside a generator"],
+    "practice_idea": "Write a generator that yields Fibonacci numbers indefinitely, then take the first 10 values."
+  },
+  {
+    "id": "python-context-managers",
+    "title": "Context Managers",
+    "summary": "Context managers use the 'with' statement to guarantee setup and cleanup of resources, even if an error occurs.",
+    "prerequisites": ["Functions", "Exceptions"],
+    "key_concepts": ["__enter__ and __exit__", "contextlib.contextmanager", "Resource cleanup"],
+    "common_mistakes": ["Not releasing resources when an exception occurs", "Forgetting __exit__ must return a boolean to control exception suppression"],
+    "practice_idea": "Write a context manager that times how long a block of code takes to run."
+  },
+  {
+    "id": "oop-inheritance",
+    "title": "Object-Oriented Inheritance",
+    "summary": "Inheritance lets a class reuse and extend the attributes and methods of another class.",
+    "prerequisites": ["Classes", "Functions"],
+    "key_concepts": ["Base and derived classes", "Method overriding", "super()", "Multiple inheritance"],
+    "common_mistakes": ["Forgetting to call super().__init__()", "Overusing inheritance instead of composition"],
+    "practice_idea": "Model a Vehicle base class with Car and Bike subclasses that override a describe() method."
+  },
+  {
+    "id": "async-await",
+    "title": "Async/Await",
+    "summary": "Async/await lets Python run I/O-bound tasks concurrently without using multiple threads.",
+    "prerequisites": ["Functions", "Event loop basics"],
+    "key_concepts": ["Coroutines", "async def", "await", "Event loop", "asyncio.gather"],
+    "common_mistakes": ["Calling an async function without awaiting it", "Blocking the event loop with synchronous code"],
+    "practice_idea": "Write an async function that fetches multiple URLs concurrently using asyncio.gather."
+  },
+  {
+    "id": "list-comprehensions",
+    "title": "List Comprehensions",
+    "summary": "A concise syntax for creating lists by transforming or filtering an existing iterable.",
+    "prerequisites": ["Loops", "Lists"],
+    "key_concepts": ["Comprehension syntax", "Conditional filtering", "Nested comprehensions"],
+    "common_mistakes": ["Writing comprehensions so complex they hurt readability", "Confusing comprehension scope with the enclosing scope"],
+    "practice_idea": "Write a list comprehension that filters even numbers from a list and squares them."
+  },
+  {
+    "id": "error-handling",
+    "title": "Error Handling with Try/Except",
+    "summary": "Techniques to catch, handle, and raise exceptions to keep programs robust.",
+    "prerequisites": ["Functions", "Control flow"],
+    "key_concepts": ["try/except/else/finally", "Custom exceptions", "Exception hierarchy"],
+    "common_mistakes": ["Catching overly broad exceptions like Exception or bare except", "Silencing errors without logging them"],
+    "practice_idea": "Write a function that reads a file and handles FileNotFoundError with a custom error message."
+  }
+]
